@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Esporte & Alta Performance | EsporteTotal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>Meu blog tech</h1>
-<p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+
+    <header class="navbar">
+        <a href="#" class="logo">ESPORTE<span>TOTAL</span></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#estatisticas">Dados</a></li>
+                <li><a href="#modalidades">Modalidades</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+            </ul>
+        </nav>
+        <a href="#newsletter" class="btn-nav">Inscrever-se</a>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Portal de Esportes 2026</span>
+            <h1>A PAIXÃO QUE MOVE O SEU MUNDO</h1>
+            <p>Cobertura completa de grandes eventos, análises táticas, dicas de treino e histórias incríveis dos maiores atletas.</p>
+            <div class="hero-btns">
+                <a href="#noticias" class="btn btn-primary">Ver Notícias</a>
+                <a href="#modalidades" class="btn btn-secondary">Explorar Esportes</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="estatisticas" class="stats-bar">
+        <div class="stat-item">
+            <h3>+500</h3>
+            <p>Atletas Cobertos</p>
+        </div>
+        <div class="stat-item">
+            <h3>24/7</h3>
+            <p>Atualizações ao Vivo</p>
+        </div>
+        <div class="stat-item">
+            <h3>120+</h3>
+            <p>Modalidades</p>
+        </div>
+        <div class="stat-item">
+            <h3>1M+</h3>
+            <p>Leitores Mensais</p>
+        </div>
+    </section>
+
+    <section id="modalidades" class="container">
+        <div class="section-title">
+            <h2>Modalidades em Foco</h2>
+            <p>Explore as principais disciplinas do esporte mundial</p>
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-tag futebol">Futebol</div>
+                <h3>Liga dos Campeões & Mais</h3>
+                <p>Análises táticas, transferências e a cobertura diária das maiores ligas do planeta.</p>
+                <a href="#" class="card-link">Saber mais &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div class="card-tag basquete">Basquete</div>
+                <h3>Estatísticas & Playoffs</h3>
+                <p>O melhor da NBA, basquete europeu e bastidores das estrelas das quadras.</p>
+                <a href="#" class="card-link">Saber mais &rarr;</a>
+            </div>
+
+            <div class="card">
+                <div class="card-tag f1">Automobilismo</div>
+                <h3>Alta Velocidade na F1</h3>
+                <p>Telemetria, estratégias de box e os bastidores dos circuitos mais velozes do mundo.</p>
+                <a href="#" class="card-link">Saber mais &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="news-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Últimas Atualizações</h2>
+                <p>Fique por dentro do que acabou de acontecer</p>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-date">Hoje, 14:30</div>
+                    <h4>Pré-temporada em alta velocidade com surpresas na pista</h4>
+                    <p>Novos pacotes aerodinâmicos prometem mudar a dinâmica das primeiras corridas do ano.</p>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">Hoje, 11:15</div>
+                    <h4>Recorde histórico quebrado na maratona internacional</h4>
+                    <p>Atleta supera marca anterior em mais de 40 segundos com ritmo impressionante.</p>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">Ontem, 20:45</div>
+                    <h4>Final dramática é decidida no último segundo da partida</h4>
+                    <p>Cesta de três pontos no estouro do cronômetro garante o título inédito.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>EsporteTotal</strong> — Seu portal definitivo de esportes.</p>
+            <p>&copy; 2026 EsporteTotal. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
