@@ -1,124 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esporte & Alta Performance | EsporteTotal</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Cosmos & Estrelas</title>
+    <style>
+        /* Aqui começa o css */
+        :root {
+            --cor--primaria: #0B192C;
+            --cor--secundaria: #FF6500;
+            --cor--fundo: #F4F6F9;
+            --cor--texto: #1E3E62;
+            --cor--botao: #FF6500;
+            --cor--contraste: #FFFFFF;
+
+            --fonte--texto: 'Verdana', sans-serif;
+        }
+
+        * {
+            transition: background-color 0.5s ease, color 0.3s ease;
+        }
+
+        .tema-escuro {
+            --cor--primaria: #1A1A2E;
+            --cor--secundaria: #E94560;
+            --cor--fundo: #090910;
+            --cor--texto: #E2E2E2;
+            --cor--botao: #16213E;
+            --cor--contraste: #A2D2FF;
+        }
+
+        .tema-escuro a {
+            color: var(--cor--secundaria);
+        }
+
+        .tema-escuro p {
+            color: var(--cor--contraste);
+        }
+
+        .tema-escuro header p {
+            color: var(--cor--contraste);
+        }
+
+        .tema-escuro .btn-tema-escuro {
+            background-color: var(--cor--secundaria);
+        }
+
+        body {
+            max-width: 100vw;
+            min-height: 100vh;
+            margin: 0;
+            background-color: var(--cor--fundo);
+            font-family: var(--fonte--texto);
+        }
+
+        header {
+            background-color: var(--cor--primaria);
+            color: var(--cor--contraste);
+            text-align: center;
+            margin: 16px auto;
+            max-width: 95%;
+            padding: 16px;
+            border-radius: 20px;
+            border: 5px solid var(--cor--secundaria);
+        }
+
+        main {
+            background-color: var(--cor--fundo);
+            color: var(--cor--texto);
+            margin: 0 auto;
+            padding: 16px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        article {
+            display: flex;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--cor--primaria);
+            border-radius: 12px;
+            margin: 16px;
+            gap: 16px;
+            padding: 20px;
+            flex: 1 1 35%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .icone-post {
+            font-size: 45px;
+            background-color: var(--cor--primaria);
+            padding: 15px;
+            border-radius: 50%;
+            border: 2px solid var(--cor--secundaria);
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+
+        article button {
+            cursor: pointer;
+            padding: 6px 12px;
+            margin: 5px;
+            border-radius: 8px;
+            border: 1px solid var(--cor--primaria);
+            background-color: var(--cor--contraste);
+        }
+
+        .btn-tema-escuro {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            font-size: 35px;
+            padding: 15px;
+            background-color: var(--cor--primaria);
+            border: 2px solid var(--cor--secundaria);
+            border-radius: 40%;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-
-    <header class="navbar">
-        <a href="#" class="logo">ESPORTE<span>TOTAL</span></a>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#estatisticas">Dados</a></li>
-                <li><a href="#modalidades">Modalidades</a></li>
-                <li><a href="#noticias">Notícias</a></li>
-            </ul>
-        </nav>
-        <a href="#newsletter" class="btn-nav">Inscrever-se</a>
+    <header>
+        <h1>Diário do Universo</h1>
+        <p>Explorando os mistérios do espaço, planetas e curiosidades da astronomia</p>
     </header>
-
-    <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="badge">Portal de Esportes 2026</span>
-            <h1>A PAIXÃO QUE MOVE O SEU MUNDO</h1>
-            <p>Cobertura completa de grandes eventos, análises táticas, dicas de treino e histórias incríveis dos maiores atletas.</p>
-            <div class="hero-btns">
-                <a href="#noticias" class="btn btn-primary">Ver Notícias</a>
-                <a href="#modalidades" class="btn btn-secondary">Explorar Esportes</a>
+    <main>
+        <article>
+            <div class="icone-post">🪐</div>
+            <div>
+                <h2><b>Glossário Espacial para Iniciantes</b></h2>
+                <p class="artigo-autor">Por: Sofia Martins</p>
+                <p>Neste blog vou compartilhar curiosidades sobre o espaço e descobertas astronômicas. Para começarmos bem, separei alguns termos fundamentais que sempre aparecem quando falamos do cosmos:</p>
+                <br>
+                <p><b>Ano-luz:</b> Ao contrário do que parece, não é uma medida de tempo, mas de distância! Representa o quanto a luz viaja no vácuo durante um ano inteiro (cerca de 9,46 trilhões de quilômetros).</p>
+                <p><b>Buraco Negro:</b> Uma região do espaço onde a gravidade é tão absurdamente forte que nada — nem mesmo a luz — consegue escapar de dentro dela após cruzar o horizonte de eventos.</p>
+                <p><b>Supernova:</b> É a explosão gigantesca que marca o fim da vida de uma estrela muito massiva. O brilho pode superar o de uma galáxia inteira por algumas semanas.</p>
+                <p><b>Exoplaneta:</b> Qualquer planeta que orbita uma estrela fora do nosso Sistema Solar. Já descobrimos milhares deles usando telescópios espaciais.</p>
+                <p><b>Nebulosa:</b> Enormes nuvens de poeira e gás no espaço. Muitas funcionam como "berçários estelares", onde novas estrelas estão nascendo.</p>
+                <p class="artigo-fonte">Fonte: <a href="https://www.nasa.gov/" target="_blank">NASA / Ciência Hoje</a></p>
             </div>
-        </div>
-    </section>
-
-    <section id="estatisticas" class="stats-bar">
-        <div class="stat-item">
-            <h3>+500</h3>
-            <p>Atletas Cobertos</p>
-        </div>
-        <div class="stat-item">
-            <h3>24/7</h3>
-            <p>Atualizações ao Vivo</p>
-        </div>
-        <div class="stat-item">
-            <h3>120+</h3>
-            <p>Modalidades</p>
-        </div>
-        <div class="stat-item">
-            <h3>1M+</h3>
-            <p>Leitores Mensais</p>
-        </div>
-    </section>
-
-    <section id="modalidades" class="container">
-        <div class="section-title">
-            <h2>Modalidades em Foco</h2>
-            <p>Explore as principais disciplinas do esporte mundial</p>
-        </div>
-
-        <div class="cards-grid">
-            <div class="card">
-                <div class="card-tag futebol">Futebol</div>
-                <h3>Liga dos Campeões & Mais</h3>
-                <p>Análises táticas, transferências e a cobertura diária das maiores ligas do planeta.</p>
-                <a href="#" class="card-link">Saber mais &rarr;</a>
+            <div>
+                <button>♥️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
+        </article>
 
-            <div class="card">
-                <div class="card-tag basquete">Basquete</div>
-                <h3>Estatísticas & Playoffs</h3>
-                <p>O melhor da NBA, basquete europeu e bastidores das estrelas das quadras.</p>
-                <a href="#" class="card-link">Saber mais &rarr;</a>
+        <article>
+            <div class="icone-post">🔭</div>
+            <div>
+                <h2><b>Como os telescópios enxergam o passado?</b></h2>
+                <p class="artigo-autor">Por: Sofia Martins</p>
+                <p>Quando olhamos para o céu noturno, estamos literalmente vendo uma máquina do tempo natural. Isso acontece porque a luz, mesmo sendo a coisa mais rápida do universo, tem uma velocidade limite:</p>
+                <br>
+                <p><b>A viagem da luz:</b> A luz viaja a cerca de 300 mil quilômetros por segundo. A luz do Sol, por exemplo, leva aproximadamente 8 minutos e 20 segundos para chegar até a Terra.</p>
+                <p><b>Estrelas distantes:</b> Se uma estrela está a 100 anos-luz de distância, a luz que vemos dela hoje saiu de lá há 100 anos. Se ela explodisse agora, só saberíamos no próximo século.</p>
+                <p><b>Telescópio James Webb:</b> Equipado com sensores infravermelhos superpotentes, ele consegue captar a luz de galáxias formadas há mais de 13 bilhões de anos, logo após o Big Bang.</p>
+                <p><b>Espectroscopia:</b> Além de tirar fotos, os telescópios analisam as cores da luz para descobrir do que os planetas distantes são feitos e se possuem atmosfera.</p>
+                <br>
+                <p>Um exemplo incrível disso é a Galáxia de Andrômeda: quando você a observa no céu, está vendo como ela era há 2,5 milhões de anos!</p>
+                <p class="artigo-fonte">Fonte: <a href="https://super.abril.com.br/ciencia/" target="_blank">Superinteressante</a></p>
             </div>
-
-            <div class="card">
-                <div class="card-tag f1">Automobilismo</div>
-                <h3>Alta Velocidade na F1</h3>
-                <p>Telemetria, estratégias de box e os bastidores dos circuitos mais velozes do mundo.</p>
-                <a href="#" class="card-link">Saber mais &rarr;</a>
+            <div>
+                <button>♥️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
+                <button>👎 <span>0</span></button>
             </div>
-        </div>
-    </section>
+        </article>
 
-    <section id="noticias" class="news-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Últimas Atualizações</h2>
-                <p>Fique por dentro do que acabou de acontecer</p>
-            </div>
+        <button class="btn-tema-escuro" title="Alternar tema">🌗</button>
+    </main>
 
-            <div class="news-grid">
-                <article class="news-card">
-                    <div class="news-date">Hoje, 14:30</div>
-                    <h4>Pré-temporada em alta velocidade com surpresas na pista</h4>
-                    <p>Novos pacotes aerodinâmicos prometem mudar a dinâmica das primeiras corridas do ano.</p>
-                </article>
+    <script>
+        // Seleciona apenas os botões de reação dentro dos artigos
+        const botoesReacao = document.querySelectorAll("article button");
 
-                <article class="news-card">
-                    <div class="news-date">Hoje, 11:15</div>
-                    <h4>Recorde histórico quebrado na maratona internacional</h4>
-                    <p>Atleta supera marca anterior em mais de 40 segundos com ritmo impressionante.</p>
-                </article>
+        botoesReacao.forEach(function (botao) {
+            let curtiu = false;
+            botao.addEventListener("click", function () {
+                let texto = botao.querySelector("span");
+                if (curtiu === false) {
+                    texto.textContent++;
+                    curtiu = true;
+                } else {
+                    texto.textContent--;
+                    curtiu = false;
+                }
+            });
+        });
 
-                <article class="news-card">
-                    <div class="news-date">Ontem, 20:45</div>
-                    <h4>Final dramática é decidida no último segundo da partida</h4>
-                    <p>Cesta de três pontos no estouro do cronômetro garante o título inédito.</p>
-                </article>
-            </div>
-        </div>
-    </section>
+        // Função para alternar entre tema claro e escuro
+        const btnTemaEscuro = document.querySelector(".btn-tema-escuro");
 
-    <footer>
-        <div class="footer-content">
-            <p><strong>EsporteTotal</strong> — Seu portal definitivo de esportes.</p>
-            <p>&copy; 2026 EsporteTotal. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
+        btnTemaEscuro.addEventListener("click", function () {
+            document.body.classList.toggle("tema-escuro");
+        });
+    </script>
 </body>
+
 </html>
